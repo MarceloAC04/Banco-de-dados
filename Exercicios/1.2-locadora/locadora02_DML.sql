@@ -15,8 +15,8 @@ VALUES('Honda')
 INSERT INTO Veiculo(IdLocadora, IdModelo, IdMarca, Placa)
 VALUES(1,1,1,'A77V5H8')
 
-INSERT INTO Aluguel(IdVeiculo, IdCliente, Protocolo)
-VALUES(1,1,'2776508')
+INSERT INTO Aluguel(IdVeiculo, IdCliente, Retirada, Devolucao, Protocolo)
+VALUES(1,1,'2023-08-02','2023-08-09','2776508')
 ---------------------------
 INSERT INTO Locadora(Nome)
 VALUES('BetSport')
@@ -33,6 +33,6 @@ VALUES('Toyota')
 INSERT INTO Veiculo(IdLocadora, IdModelo, IdMarca, Placa)
 VALUES(2,2,2,'FF5VGH9')
 
-INSERT INTO Aluguel(IdVeiculo, IdCliente, Protocolo)
-VALUES(2,2,'3436118')
+INSERT INTO Aluguel(IdVeiculo, IdCliente, Retirada, Devolucao, Protocolo)
+VALUES(2,2,'2023-08-08','2023-10-08','3436118')
 

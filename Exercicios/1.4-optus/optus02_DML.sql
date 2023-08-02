@@ -14,7 +14,7 @@ VALUES(1,1)
 
 INSERT INTO Usuario(NomeUsuario, Email, Senha, Permissao)
 VALUES('Marcelo04', 'marcelo@gmail.com', '742617', 'Nao')
-
+------------
 INSERT INTO Artista(Nome)
 VALUES('Deep Purple')
 
