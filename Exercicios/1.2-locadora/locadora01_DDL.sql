@@ -43,4 +43,3 @@ CREATE TABLE Aluguel
 	IdCliente INT FOREIGN KEY REFERENCES Cliente(IdCliente),
 	Protocolo CHAR(7) NOT NULL
 )
-

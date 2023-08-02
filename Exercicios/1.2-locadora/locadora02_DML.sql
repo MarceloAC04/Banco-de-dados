@@ -17,7 +17,7 @@ VALUES(1,1,1,'A77V5H8')
 
 INSERT INTO Aluguel(IdVeiculo, IdCliente, Protocolo)
 VALUES(1,1,'2776508')
-
+---------------------------
 INSERT INTO Locadora(Nome)
 VALUES('BetSport')
 
@@ -36,5 +36,3 @@ VALUES(2,2,2,'FF5VGH9')
 INSERT INTO Aluguel(IdVeiculo, IdCliente, Protocolo)
 VALUES(2,2,'3436118')
 
-
-SELECT * FROM Aluguel
