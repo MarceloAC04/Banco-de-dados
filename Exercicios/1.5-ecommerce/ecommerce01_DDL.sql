@@ -1,47 +1,45 @@
 CREATE DATABASE Exercicios;
 
-DROP DATABASE Exercicios;
-
 USE Exercicios;
 
 CREATE TABLE Loja
 (
 	IdLoja INT PRIMARY KEY IDENTITY,
-	LojaNome VARCHAR(30)
+	LojaNome VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE Categoria
 (
 	IdCategoria INT PRIMARY KEY IDENTITY,
 	IdLoja INT FOREIGN KEY REFERENCES Loja(IdLoja),
-	NomeCategoria VARCHAR(50)
+	NomeCategoria VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE SubCategoria
 (
 	IdSubCategoria INT PRIMARY KEY IDENTITY,
 	IdCategoria INT FOREIGN KEY REFERENCES Categoria(IdCategoria),
-	NomeSubCategoria VARCHAR(50)
+	NomeSubCategoria VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Produto
 (
 	IdProduto INT PRIMARY KEY IDENTITY,
 	IdSubCategoria INT FOREIGN KEY REFERENCES SubCategoria(IdSubCategoria),
-	NomeProduto VARCHAR(30)
+	NomeProduto VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE ClienteLoja
 (
 	IdClienteLoja INT PRIMARY KEY IDENTITY,
-	NomeCliente VARCHAR(50)
+	NomeCliente VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Pedido
 (
 	IdPedido INT PRIMARY KEY IDENTITY,
 	IdClienteloja INT FOREIGN KEY REFERENCES ClienteLoja(IdClienteLoja),
-	Numero VARCHAR(50)
+	Numero VARCHAR(50) NOT NULL
 );
 
 
