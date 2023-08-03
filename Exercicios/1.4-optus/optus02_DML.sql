@@ -29,5 +29,3 @@ VALUES(2,2)
 
 INSERT INTO Usuario(NomeUsuario, Email, Senha, Permissao)
 VALUES('Regis44', 'regis@gmail.com', '51563', 'Sim')
-
-SELECT * FROM AlbumEstilo

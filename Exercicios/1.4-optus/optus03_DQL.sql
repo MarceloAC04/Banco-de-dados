@@ -10,7 +10,7 @@ SELECT Nome, Titulo, DataLancamento, localizacao, Qtminutos,  ATIVO
 FROM Album
 LEFT JOIN Artista
 ON Album.IdArtista = Artista.IdArtista
-WHERE DataLancamento = '1993-19-07'
+WHERE DataLancamento  > '1976'
 
 --- listar os dados de um usuário através do e-mail e senha
 SELECT NomeUsuario, Email, Senha, Permissao
@@ -22,8 +22,6 @@ SELECT Nome, Titulo, NomeEstilo
 FROM AlbumEstilo
 LEFT JOIN Estilo
 ON AlbumEstilo.IdEstilo = Estilo.IdEstilo
-LEFT JOIN Album
-ON AlbumEstilo.IdAlbum = Album.IdAlbum
-LEFT JOIN Artista
-ON Album.IdArtista = Artista.IdArtista
+LEFT JOIN Album ON AlbumEstilo.IdAlbum = Album.IdAlbum
+LEFT JOIN Artista ON Album.IdArtista = Artista.IdArtista
 WHERE ATIVO = 'Sim'

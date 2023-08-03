@@ -1,12 +1,12 @@
 USE Exercicios;
 
-INSERT INTO Clinica(Endereco)
-VALUES('Rua Niteroi')
+INSERT INTO Clinica(Nome, Endereco)
+VALUES('Pet Care', 'Rua Niteroi')
 
 INSERT INTO Veterinario(IdClinica, Nome, CRMV)
 VALUES(1, 'Eduardo', '42679878789')
 
-INSERT INTO DONO(NomeDono)
+INSERT INTO Dono(NomeDono)
 VALUES('Raquel')
 
 INSERT INTO Raca(DescricaoRaca)
@@ -22,17 +22,17 @@ INSERT INTO Atendimento(IdVeterinario, IdPet, Descricao, DataAtendimento)
 VALUES(1,1,'Consulta de Rotina', '08/08/23')
 
 
-INSERT INTO Clinica(Endereco)
-VALUES('Rua Frei Caneca')
+INSERT INTO Clinica(Nome, Endereco)
+VALUES('Healthy Pet','Rua Frei Caneca')
 
 INSERT INTO Veterinario(IdClinica, Nome, CRMV)
 VALUES(2, 'James', '32672648798')
 
-INSERT INTO DONO(NomeDono)
+INSERT INTO Dono(NomeDono)
 VALUES('Daniel')
 
 INSERT INTO Raca(DescricaoRaca)
-VALUES('Pug')
+VALUES('Shih Tzu')
 
 INSERT INTO Tipo(DescricaoTipo)
 VALUES('Cachorro')
@@ -41,7 +41,4 @@ INSERT INTO Pet(IdTipo, IdRaca, IdDono, NomePet, DataNascimento)
 VALUES(2,2,2,'Mel','24/06/2016')
 
 INSERT INTO Atendimento(IdVeterinario, IdPet, Descricao, DataAtendimento)
-VALUES(2,2,'Retirada de Gesso', '03/08/23')
-
-
-SELECT * FROM Atendimento
+VALUES(2,2,'Aplicacao de Vacina', '03/08/23')

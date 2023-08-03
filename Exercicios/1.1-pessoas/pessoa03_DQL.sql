@@ -1,3 +1,5 @@
+USE Exercicios;
+
 SELECT 
 	NOME, 
 	CNH, 
@@ -15,3 +17,9 @@ FROM Pessoa
 LEFT JOIN Email
 ON Pessoa.IdPessoa = Email.IdPessoa
 LEFT JOIN Telefone ON Pessoa.IdPessoa = Telefone.IdPessoa ORDER BY Nome DESC
+
+SELECT Nome, CNH, Endereco as Email
+FROM Pessoa
+LEFT JOIN Email
+ON Pessoa.IdPessoa = Email.Idpessoa
+WHERE Nome LIKE 'M%'
